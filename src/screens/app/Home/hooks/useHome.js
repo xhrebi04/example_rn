@@ -1,7 +1,8 @@
-import useAlert from '@/hooks/useAlert';
-import useLoading, { TYPE_LOADING, TYPE_REFRESHING } from '@/hooks/useLoading';
-import { fetchPostsRequest } from '@/services/api/posts';
 import { useEffect, useState } from 'react';
+
+import useAlert from '@hooks/useAlert';
+import useLoading, { TYPE_LOADING, TYPE_REFRESHING } from '@hooks/useLoading';
+import { fetchPostsRequest } from '@services/api/posts';
 
 const useHome = () => {
     const [posts, setPosts] = useState([]);
@@ -26,6 +27,7 @@ const useHome = () => {
 
     useEffect(() => {
         fetchPosts(TYPE_LOADING);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return {

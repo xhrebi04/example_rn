@@ -1,13 +1,20 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
-import PressableOpacity from '@/components/PressableOpacity';
-import assets from '@/constants/assets';
+
+import PressableOpacity from '@components/PressableOpacity';
+import assets from '@constants/assets';
+import { useNavigation } from '@react-navigation/native';
 
 const PostItem = ({ post }) => {
-    const { title } = post || {};
+    const { title, id } = post || {};
+    const navigation = useNavigation();
+
+    const onItemPress = () => {
+        navigation.navigate('PostDetail', { postId: id });
+    };
 
     return (
-        <PressableOpacity>
+        <PressableOpacity onPress={onItemPress}>
             <View style={styles.container}>
                 <Text style={styles.text}>{title}</Text>
                 <Image source={assets.chevron_right} style={styles.image} />

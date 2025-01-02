@@ -1,5 +1,6 @@
-import axios from 'axios';
 import Config from 'react-native-config';
+
+import axios from 'axios';
 
 const baseURL = Config.API_URL;
 

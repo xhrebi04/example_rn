@@ -1,10 +1,12 @@
 import React from 'react';
 import { FlatList, RefreshControl, StyleSheet } from 'react-native';
-import useHome from './hooks/useHome';
+
+import colors from '@colors';
+import withSpinner from '@components/HOCs/withSpinner';
+
 import PostItem from './components/PostItem';
 import PostListSeparator from './components/PostListSeparator';
-import colors from '@/theme/colors';
-import withSpinner from '@/components/HOCs/withSpinner';
+import useHome from './hooks/useHome';
 
 const FlatListWithSpinner = withSpinner(FlatList);
 

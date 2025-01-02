@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import useDelay from './useDelay';
 
 export const TYPE_LOADING = 'LOADING';

@@ -1,6 +1,7 @@
-import colors from '@/theme/colors';
 import React from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
+
+import colors from '@colors';
 
 const withSpinner = (Component) => (props) => {
     const { loading } = props;
