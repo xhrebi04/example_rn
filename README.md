@@ -24,4 +24,9 @@ yarn run create-release-apk
 
 # run lint
 yarn run lint
+
+# iOS setup
+cd path/to/example_rn-main/folder
+yarn install
+cd ios && pod install && cd ..
 ```
