@@ -16,6 +16,10 @@ Example React Native app is mobile application used for demonstration purposes. 
 - **ESLint** - linting utility for better code quality
 - **Prettier** - code formatter for better code quality
 
+# CI/CD
+
+- **Bitrise**
+
 ## Useful commands
 
 ```bash
@@ -29,4 +33,5 @@ yarn run lint
 cd path/to/example_rn-main/folder
 yarn install
 cd ios && pod install && cd ..
+yarn start
 ```
