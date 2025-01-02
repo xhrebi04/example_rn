@@ -1,0 +1,23 @@
+{
+    "presets": ["module:@react-native/babel-preset"],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "@": "./src",
+                    "@components": "./src/components",
+                    "@hooks": "./src/hooks",
+                    "@assets": "./src/assets",
+                    "@colors": "./src/theme/colors"
+                }
+            }
+        ]
+    ],
+    "env": {
+        "production": {
+            "plugins": ["transform-remove-console"]
+        }
+    }
+}
