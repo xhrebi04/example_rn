@@ -1,4 +1,4 @@
-Example React Native app is mobile application used for demonstration purposes. For small project like this **Javascript** language was used. For larger projects, **Typescript** must also be considered. `.env` file is added to this repository only for demonstration purpose.
+Example React Native app is mobile application used for demonstration purposes. For small project like this **Javascript** language was used. For larger projects, **Typescript** must also be considered. `.env` file is added to this repository only for demonstration purposes.
 
 # My Tech Stack
 
